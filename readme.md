@@ -1,4 +1,4 @@
-# NBA winnder prediction
+# NBA winner prediction
 ## dataset
 The data set is downloaded from [basketball-reference.com](https://www.basketball-reference.com/). Choose `Seasons` and pick a season such as `2018-19`. Get `Team Per Game Stats`, `Opponent Per Game Stats` and `Miscellaneous Stats`, and save them as `cvs` file in `data` subpath.
 Just like 

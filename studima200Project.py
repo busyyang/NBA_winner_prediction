@@ -103,12 +103,12 @@ def build_dataSet(team_stats, all_data):
         for key, value in team_stats.loc[Lteam].iteritems():
             team2_features.append(value)
 
-        if random.random() > 0.5:
+        if WLoc == 'H':
             X.append(team1_features + team2_features)
-            y.append(0)
+            y.append(1)
         else:
             X.append(team2_features + team1_features)
-            y.append(1)
+            y.append(0)
 
         new_winner_rank, new_loser_rank = calc_elo(Wteam, Lteam)
         team_elos[Wteam] = new_winner_rank
