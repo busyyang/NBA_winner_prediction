@@ -5,9 +5,11 @@ Just like
  
  ![data files](./images/data_file.png)
  
-then the features can be create using those files. And match result label information can be got from `Schedule and Results`(as the same as studima200). Just save all results into `csv` file.
+then the features can be create using those files. And match result label information can be got from `Schedule and Results`(as the same as studima200 offered). Save all results into `csv` file.
+
 Please check './data/Year_2016_2017.csv', './data/Year_2017_2018.csv' and './data/Year_2018_2019.csv'.
-check `./data` subpath is like:
+
+Check `./data` subpath is like:
 
 ![all_files](./images/all_files.png)
  
@@ -16,10 +18,23 @@ Machine Learning method: Tecision Tree, Random Forest, XGBoost, Logistic Regress
 ~~~python
 python ./studima200Project.py
 ~~~
+And an `.ipynb` file is offered to run this python script step by step. More modification sugesstions (shift feature file and label file) are also noted in that `.ipynb` file.
+
+## result
+result should be like:
+
+![result](./images/result.png)
+
+Please note: Since data sets are shuffled randomly, and random process is also included in model trainning process, the result may be different in every trial.
 
 
-## requirements.txt
-sklearn
-pandas
-numpy
+## requirements
+sklearn\
+pandas\
+numpy\
 xgboost
+
+## file history
+|Date|Version|Comments|
+|:--:|:--:|:--:|
+|2019/12/9|V0.1|Init|

@@ -74,7 +74,7 @@ def get_elo(team):
         return team_elos[team]
 
 
-def build_dataSet(all_data):
+def build_dataSet(team_stats, all_data):
     # print("Building data set..")
     for index, row in all_data.iterrows():
         WLoc = ''
@@ -126,7 +126,7 @@ if __name__ == '__main__':
     team_stats = initialize_data(Mstat, Ostat, Tstat)
 
     result_data = pd.read_csv(folder + '/Year_2018_2019.csv')
-    X, y = build_dataSet(result_data)
+    X, y = build_dataSet(team_stats, result_data)
     # data sets should be shuffled.
     per = np.random.permutation(len(y))
     X = X[per, :]
