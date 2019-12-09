@@ -5,12 +5,21 @@ Just like
  
  ![data files](./images/data_file.png)
  
-then the features can be create using those files. And match result label information can be got from `Schedule and Results`. just save all results into one `csv` file and refine them.
-Please check './data/2015-2016_result.csv'.
+then the features can be create using those files. And match result label information can be got from `Schedule and Results`(as the same as studima200). Just save all results into `csv` file.
+Please check './data/Year_2016_2017.csv', './data/Year_2017_2018.csv' and './data/Year_2018_2019.csv'.
+check `./data` subpath is like:
+
+![all_files](./images/all_files.png)
  
 ## model
-    python ./NBAprediction.py
-An result `csv` file will get base on `schedule` file. Logistic Regression method is implemented in this python file. Other models can be friendly built by sklearn package.
+Machine Learning method: Tecision Tree, Random Forest, XGBoost, Logistic Regression and Naive Bayes (Gaussian) are programmed in `studima200Project.py`. 
+~~~python
+python ./studima200Project.py
+~~~
 
-## ref
-Chinese blog for more details:https://blog.csdn.net/moy37rqw1jarn33bgzk/article/details/80602924
+
+## requirements.txt
+sklearn
+pandas
+numpy
+xgboost
