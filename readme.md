@@ -16,7 +16,7 @@ Check `./data` subpath is like:
 ## model
 Machine Learning method: Tecision Tree, Random Forest, XGBoost, Logistic Regression and Naive Bayes (Gaussian) are programmed in `studima200Project.py`. 
 ~~~python
-python ./studima200Project.py
+python ./NBA_prediction.py
 ~~~
 And an `.ipynb` file is offered to run this python script step by step. More modification sugesstions (shift feature file and label file) are also noted in that `.ipynb` file.
 
@@ -38,3 +38,8 @@ xgboost
 |Date|Version|Comments|
 |:--:|:--:|:--:|
 |2019/12/9|V0.1|Init|
+
+## ref
+more detail:
+
+https://blog.csdn.net/moy37rqw1jarn33bgzk/article/details/80602924

@@ -18,7 +18,6 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 from xgboost import XGBClassifier
-import random
 import warnings
 
 warnings.filterwarnings("ignore", category=FutureWarning, module="sklearn")
